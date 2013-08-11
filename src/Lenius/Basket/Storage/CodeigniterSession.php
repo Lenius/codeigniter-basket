@@ -27,9 +27,6 @@ class CodeigniterSession implements \Lenius\Basket\StorageInterface
     protected $identifier;
     protected static $cart = array();
 
-    // Codeigniter instance
-    protected $CI;
-
     public function __construct()
     {
         if (strlen(session_id()) < 1) {
