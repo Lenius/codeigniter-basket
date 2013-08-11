@@ -1,15 +1,15 @@
-Laravel Shopping Basket Package
+Codeigniter Shopping Basket Package
 ============
 
-Laravel Facade and Service Provider for Lenius\Basket
+Codeigniter Service Provider for Lenius\Basket
 
 Installation
 ---
 
-To use, simply install the package via Composer and then add the following to your app/config/app.php to the service providers array:
+To use, simply install the package via Composer and then copy the following file to your application/libraries folder:
 
 ```php
-'Lenius\Basket\BasketServiceProvider',
+'todo',
 ```
 
 You should then be good to go and be able to access the basket using the following static interface:

@@ -21,16 +21,25 @@
 namespace Lenius\Basket\Storage;
 
 use Lenius\Basket\Item;
-use Session;
 
 class CodeigniterSession implements \Lenius\Basket\StorageInterface
 {
     protected $identifier;
     protected static $cart = array();
 
+    // Codeigniter instance
+    protected $CI;
+
+    public function __construct()
+    {
+        if (strlen(session_id()) < 1) {
+          session_start();
+        }
+    }
+
     public function restore()
     {
-        $carts = Session::get('cart');
+        $carts = @$_SESSION["cart"];
 
         if ($carts) static::$cart = $carts;
     }
@@ -44,7 +53,6 @@ class CodeigniterSession implements \Lenius\Basket\StorageInterface
     public function insertUpdate(Item $item)
     {
         static::$cart[$this->id][$item->identifier] = $item;
-
         $this->saveCart();
     }
 
@@ -173,7 +181,7 @@ class CodeigniterSession implements \Lenius\Basket\StorageInterface
     protected function saveCart()
     {
         $data = static::$cart;
-
-        Session::put('cart', $data);
+        $_SESSION["cart"] = $data;
     }
+
 }
