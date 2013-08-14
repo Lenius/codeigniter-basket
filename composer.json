@@ -8,10 +8,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "repositories": [{
-    "type": "vcs",
-    "url": "https://github.com/Lenius/codeigniter-basket"
-    }],
     "require": {
         "php": ">=5.3.0",
         "lenius/basket": "dev-master"
