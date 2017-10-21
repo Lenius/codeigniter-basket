@@ -1,7 +1,7 @@
 Codeigniter Shopping Basket Package
 ============
 
-[![Latest Stable Version](https://poser.pugx.org/Lenius/codeigniter-basket/v/stable.svg)(https://packagist.org/packages/Lenius/codeigniter-basket) [![Total Downloads](https://poser.pugx.org/Lenius/codeigniter-basket/downloads.svg)
+[![Latest Stable Version](https://poser.pugx.org/Lenius/codeigniter-basket/v/stable.svg)](https://packagist.org/packages/Lenius/codeigniter-basket) [![Total Downloads](https://poser.pugx.org/Lenius/codeigniter-basket/downloads.svg)](https://packagist.org/packages/Lenius/codeigniter-basket)
 
 Codeigniter Service Provider for Lenius\Basket
 
